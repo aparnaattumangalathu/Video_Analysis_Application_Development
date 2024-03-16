@@ -1,0 +1,120 @@
+
+/* results.css */
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('/static/image/background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h1 {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(21, 19, 22);
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgb(171, 80, 236);
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: rgb(236, 187, 80);
+}
+
+
+.container {
+    margin-left: 20%;
+    margin-top: 20%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #d5c1eeb2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.segment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between segments */
+    text-align: center;
+}
+
+.segment {
+    text-align: center;
+}
+
+/* Adjustments for video controls */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(47, 46, 48);
+    border-radius: 10px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+footer {
+  
+    margin-bottom: 0px;
+}
+.copy {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    margin-top: 20%;
+}
