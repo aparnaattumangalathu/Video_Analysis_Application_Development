@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Video Analysis</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;500;700;900&display=swap">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+
+        </ul>
+
+
+    </nav>
+
+    <div class="container">
+        <h1>Football Video Analysis</h1>
+        <form action="/analyze" method="post" enctype="multipart/form-data">
+            <label for="video" class="input_video">Select a Video File:</label>
+            <input type="file" id="video" name="video" accept="video/*">
+            <div class="highlight_name">
+                <div class="highlight-options">
+                    <label for="all">All</label>
+                    <input type="radio" id="all" name="highlight" value="all" checked>
+                    <label for="goal">Goal</label>
+                    <input type="radio" id="goal" name="highlight" value="goal">
+                    <label for="happy">Happy</label>
+                    <input type="radio" id="happy" name="highlight" value="happy">
+                    <label for="loss">Loss</label>
+                    <input type="radio" id="loss" name="highlight" value="loss">
+                </div>
+            </div>
+            <button type="submit">Analyze Video</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="copy">© Football Highlighter 2024</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/css/result.css">
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+
+        </ul>
+
+
+    </nav>
+
+    <div class="container">
+        <h1>Highlight</h1>
+        {% for i in range(segments|length) %}
+        <div class="segment">
+            <h2>Segment {{ i+1 }}</h2>
+            <div class="segment-content">
+                <video controls>
+                    <source src="{{ segments[i][0] }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Emotion: {{ emotions[i][0] }}</p>
+                <ul>
+                    {% for scenario in scenarios[i] %}
+                    <li>Scenario: {{ scenario }}</li>
+                    {% endfor %}
+                </ul>
+
+
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    <footer>
+        <div class="copy">© Football Highlighter 2024</div>
+    </footer>
+</body>
+
+</html>
